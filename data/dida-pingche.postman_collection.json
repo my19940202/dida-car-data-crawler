@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "a0561f37-240c-4da6-ad6a-75b638765db2",
+		"name": "dida-pingche",
+		"description": "嘀嗒评车的API，用于学习和数据分析使用",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2067304"
+	},
+	"item": [
+		{
+			"name": "顺风车list-carpool",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=e228365eae237d90468b5489ab65e82e83384724e791ac7107fa995892204731"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuU5Q6DGgeOVlWCyqjnNFh6g9kAEeqNC54PBb5hWChDbjMTe9amjQfQR6eo+q++mjLLMOpEeaRWO1XGIFxcIGpmhH/JgsrHh3RF+yFkXCeRlmZfFo/AiR6wjc46PidqBRMAOAhl/JdFSGwpIBoJ9NdYJlrhHJBh8WfqV5HaoXH4rM/6TmDFmIXpPq3nmFQAGVLJkbz45XyWKZRPh0aJbeaLtRp4aNWQzKt1d1TXfFfp8zjemNNTjiE39Sj4BoBkZ3q5Su3VKBy1YFPxw8AHSMD+yB3GH5CDM+f1O3RMJWhziCpkhHMcrvxyhLkL88NwGk5HvhWz8BJzUwDMtqTJVrzU+RkoH2LsB19a+kH+TVjUYXDsIlQdypvXj/eHN0MifbHrBNYf5eqRlr2rSi66GBkL8kA5g5ena001Cb75C8GMbaGEYgpgzr+ZiSCdujz2PwUad1jEgWBubeY14TMi5Wwt2x5dUXi0b8nToqQYSd+xFYpoOxUrP5aAGqHToZ+rbCggwpxmebnCDLtQtnvApJuXAnE7H8OUh4PRviCnOV42hIDQ0KIAvDHQLCZFIOK/1z5Llo+U7wSayyZnr9QeUI53LcrSuqxlsUKAt873MlwZDmeh61XML2MsQZnDjblAJekW5l7rEf3XQFa/TAMqPUJZqWaqBaJPUNO1Q3u80Uma0PW7iVW+nX+D/S/D8/pRmeBd7cm6MfuLsOjnjYjy7pR8scLvaEdWCmvBNZbOs6d7OJpchsrStr2Bxll9O2oWDXy9PGZaz87LT4PhQHVBMwnv2+2ikXezynxmdpYP124NQEHLnfguqQW98n6zR0tiGx4fmU9zDWCU3qA=="
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-Hans-FR;q=1, en-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "8676b2de8ccc7b58c9262de619cc9092 1704612495 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis.didapinche.com/carpool/list/driver/work?ai_tracker=%7B%22search_id%22%3A%221704612489662-23719430%22%7D&day_filter=1&eco_route_type=0&order_by=auto&page=1&page_size=20&ride_type=2&search_type=3&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"list",
+						"driver",
+						"work"
+					],
+					"query": [
+						{
+							"key": "ai_tracker",
+							"value": "%7B%22search_id%22%3A%221704612489662-23719430%22%7D"
+						},
+						{
+							"key": "day_filter",
+							"value": "1"
+						},
+						{
+							"key": "eco_route_type",
+							"value": "0"
+						},
+						{
+							"key": "order_by",
+							"value": "auto"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "20"
+						},
+						{
+							"key": "ride_type",
+							"value": "2"
+						},
+						{
+							"key": "search_type",
+							"value": "3"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "司机上班-翻页无效",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-2.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=e44ea45d16c70c5fe6f70e12cbafe337e08be4f0b08d7711c0f7783d35a51b4a"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNfomf31Qr7Txyvd3w/iQmTMCNZRtiGLrksOeLET5ESgK/xylncdN//mDgqUjP2LTO7CTp+wk3oR0aL6Q1e7rYIccKSWDRiTu/gqFoW9Yao1gCOmnzl04lXJ6fPYaISWmnredQhBLNr8Y+RsSSdUal/jOiWT2BOJnEmoI1RTamGWeyt9OlUuj3VBbS/OPCBAesjaLqBf73TsgKPROhqBAyHCxTCrG9pXYtebcidc/UdEGw77lG/XEtOWeQStVY5bca1MJmwu8oIlAm2jqlZR/l0f5nfCmcnHu8LuyRZxU7KUPHrnML1dqsevrTR3TLlVGpI08NKjj1GPpB+LguPsugA2seilYtyNuBaJ7g4VmO7fka0bVCykS5dtxym0dDhwhw4aYKagBAUlbSNLTZgI6wg6mIsTin4vFZUdp5qGO5sKfLdru+kFuWp/53NbSIDH0grAJpNqYNVot3m3e74V6kljNj/JKvtCeqP75u4/7OFExKrlrq14AdYlWsLDJLUwfc+IDAGfdER2b3QoJruVp2zJMYUN5AHBmQO/VOnsNHTwRmQgObAWmvDpQCa0EkazGnpMPZLGlfP8mk90oUTqSQn5duxjP66JhZEyROZyu/umQRXQNHeR0VfGX3lO98LlAeNvXqfLWmlhydMHnCnJkI/wZ46rkFopFV2ELzYz7blGbHXe2bCyy1VbFtMJbIDMAu2nLsvLj6TKCmvr2NdvBD4hnfGjNwIgKCbOWgc7zElQZ8J4fy5c/MW74wumJcPqccVBE6frAXO29aTe2oCGkoGnT2ftyhrmec8QlurPK+MWr"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "d82cd325fdf1ec69d90592242a66f65b 1706452902 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-2.didapinche.com/carpool/list/driver/work?ai_tracker&day_filter=2&eco_route_type=0&order_by=auto&page=1&page_size=20&ride_type=1&search_type=0&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-2",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"list",
+						"driver",
+						"work"
+					],
+					"query": [
+						{
+							"key": "ai_tracker",
+							"value": null
+						},
+						{
+							"key": "day_filter",
+							"value": "2"
+						},
+						{
+							"key": "eco_route_type",
+							"value": "0"
+						},
+						{
+							"key": "order_by",
+							"value": "auto"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "20"
+						},
+						{
+							"key": "ride_type",
+							"value": "1"
+						},
+						{
+							"key": "search_type",
+							"value": "0"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "司机下班-翻页无效",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-2.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=e44ea45d16c70c5fe6f70e12cbafe337e08be4f0b08d7711c0f7783d35a51b4a"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNfomf31Qr7Txyvd3w/iQmTMCNZRtiGLrksOeLET5ESgK/xylncdN//mDgqUjP2LTO7CTp+wk3oR0aL6Q1e7rYIccKSWDRiTu/gqFoW9Yao1gCOmnzl04lXJ6fPYaISWmnredQhBLNr8Y+RsSSdUal/jOiWT2BOJnEmoI1RTamGWeyt9OlUuj3VBbS/OPCBAesjaLqBf73TsgKPROhqBAyHCxTCrG9pXYtebcidc/UdEGw77lG/XEtOWeQStVY5bca1MJmwu8oIlAm2jqlZR/l0f5nfCmcnHu8LuyRZxU7KUPHrnML1dqsevrTR3TLlVGpI08NKjj1GPpB+LguPsugA2seilYtyNuBaJ7g4VmO7fka0bVCykS5dtxym0dDhwhw4aYKagBAUlbJcHHvL5ys5Y3l2rYlsGRa5L8MUNNHxX69k+t6SfS6HmsFTco0zSBBpDswVwm++zBPwj8jXgZDR9mwPDDJ2i/J0tbn1xGV4vF1VVMMg4Qc4b8Fcm2Q7mKkhlGUvCERUm/89DdmatGC9hGXjE0CdPTIP00KI36s1YdBwXFBsBLdujn4xw3z67vtx+8qIN+GdHEHD+hG4PWQR3RAsqJ46Bo3hs6dJSsB0TaIqyLDCWhcPgnbCzq2Jdq7DkCNKyq31gdrx34B82muwk9igGdAwVqhlgmJzjWE4puJ0Jixh9i/pwh6ksqdTTBTlSBDIH4ruq4Me7620Y+KPDdu5wP82ux+alqGWdehoN/n/3DzC5dffa5ev9S0exp4twqgi+Lpz8rth/R4Z34onokzjYoykYrwwBs14qoGRh5"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "d5c8a3819d85c46e88624ccd30635788 1706452933 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-2.didapinche.com/carpool/list/driver/work?day_filter=1&eco_route_type=0&order_by=auto&page=1&page_size=20&ride_type=2&search_type=0&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-2",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"list",
+						"driver",
+						"work"
+					],
+					"query": [
+						{
+							"key": "day_filter",
+							"value": "1"
+						},
+						{
+							"key": "eco_route_type",
+							"value": "0"
+						},
+						{
+							"key": "order_by",
+							"value": "auto"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "20"
+						},
+						{
+							"key": "ride_type",
+							"value": "2"
+						},
+						{
+							"key": "search_type",
+							"value": "0"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "附近订单",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-2.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=679a4d67b34ff98cef73fd7ed90cda855dfdb59e8fc289afc11d3638c0041502"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNfomf31Qr7Txyvd3w/iQmTMCNZRtiGLrksOeLET5ESgK/xylncdN//mDgqUjP2LTO7CTp+wk3oR0aL6Q1e7rYIccKSWDRiTu/gqFoW9Yao1gCOmnzl04lXJ6fPYaISWmnredQhBLNr8Y+RsSSdUal/gI9uVniRvU74ktFcE+d+pjerz49zyUzjV1cUsmOb8KXWiyBVDD/sMMlIa4SVdBdc3DeeD+UFY2lt+zTCSVYc0du4l3nPcCVr82JUzAgkUPL7L6aFn4d8xaGCrQ2vY0dZRDJEUlmabqmPKkV+fZ+Qv5z3S/1GocIHGuKaocp8coPSB10XT8++cWPRhU7kM8QBeBAOmOswWX16R5kzRZNaN4JLgVO3kLJZ/1laeHFUGenz6553SKyHfQgMO8ZmpMedpeCGuXxGWpLxzcKoveHhDgkIzGu5APeIP/FskU9fq7ivwxQ5JhIPfPHxqrJ/HpOyGzmVxqJfPw0NIi+gSEHS0uRD0I+ve64pdweDg4EfZdKl7gKDVQb46wfZCBFoE/wHd1O0Bo3Rq7jU0KrbPUR7pqnlQdYiUDzy/JryiBHZW2nEiazwX357tMH4IfQXu6Zrt+VfEtDXi7KF7LWeDSSy+68Yx+d0CJu28caYX9h8hHD+UkmWDh4y6s/9TYWytqRJBgpZAcq0pfPo7Gie4e8ew8i4AnZlZRze9uo9hzSLzw7SCRtuLAwNZKJIwUSlQWkX4BYVSme0lu0uM12KrUp4E5jXo11ezeTFOGCRWB25Xv2j7JR8gnx2kcGFYxqaqjbrOE0sy8Eqy60oR92F/dG9VS"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "859b84fc2a43318e9015b8aa96e29653 1706971152 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-2.didapinche.com/carpool/list/driver/nearby?center_latitude=31.084313&center_longitude=121.511866&filter_by=all&order_by=default&page=1&page_size=20&rideType=0&search_type=0&timeRange=0&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-2",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"list",
+						"driver",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "center_latitude",
+							"value": "31.084313"
+						},
+						{
+							"key": "center_longitude",
+							"value": "121.511866"
+						},
+						{
+							"key": "filter_by",
+							"value": "all"
+						},
+						{
+							"key": "order_by",
+							"value": "default"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "20"
+						},
+						{
+							"key": "rideType",
+							"value": "0"
+						},
+						{
+							"key": "search_type",
+							"value": "0"
+						},
+						{
+							"key": "timeRange",
+							"value": "0"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "城际订单-翻页无效",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-2.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=679a4d67b34ff98cef73fd7ed90cda855dfdb59e8fc289afc11d3638c0041502"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNfomf31Qr7Txyvd3w/iQmTMCNZRtiGLrksOeLET5ESgK/xylncdN//mDgqUjP2LTO7CTp+wk3oR0aL6Q1e7rYIccKSWDRiTu/gqFoW9Yao1gCOmnzl04lXJ6fPYaISWmnredQhBLNr8Y+RsSSdUal/gI9uVniRvU74ktFcE+d+pjerz49zyUzjV1cUsmOb8KXWiyBVDD/sMMlIa4SVdBdc13UW4CXLA8VrCpqeSmUYIP2zhgCC0FowzIP3JCQlM/aLKnDtuSPMOMrmabrjX5evkpw73roNxRH4uQk4h2Q1chT7aWPDxP4QYRwKPFZtZlB4Rw1DRwInBHmRY8Cgt6dxNXyNZBwywTyrb8oSU4y4XjiYYanbjPJE2mcxqOs6QPwoiLJ/7FnG/d9tjIzwloitAKgwieOcNcSyVmqaaQTSAf7omb10gmCdk72Q4hs5pRl+ez0zHzeXhdmUCUlXNV21ycU2Ynrc6q57xBwT44GGc8o4MhoZwIgCqieAMNBTzaQ+v2zk5QgSYiBTFuy9O61VI9P+CY2NExiQDx2Abieh/BA5y4PJxX7CSgwKPBFu90z0haJQIbSmkUMB7uFvVovSyHYQ+H8lkYGmA6mqkHDZbQ4pc5Nf57mMJFEhU7xf8JKXS5vHsxJSTRV2sG6jNIRfarmsrZgSlJ6FZTi+NakvNwAdBFFekA76oOtXwtio+IPqs7bqERqWBEAkbt3F1aJ7n3qbKM0BWg+U3XgVVfNPpJE7qLOQ8T3lUWv9B2LCGf3bG1A7lrSbO7U/G+QFfA7h/MMw/V61/hrmR9JsnFWo5M"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "0b9a57fc1bec5276b4641577e28801e8 1706971724 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-2.didapinche.com/carpool/list/driver/nearby/inter?call_page_source=near&order_by=0&page=1&page_size=20&rideType=0&route_type=7&search_type=0&timeRange=0&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-2",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"list",
+						"driver",
+						"nearby",
+						"inter"
+					],
+					"query": [
+						{
+							"key": "call_page_source",
+							"value": "near"
+						},
+						{
+							"key": "order_by",
+							"value": "0"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "20"
+						},
+						{
+							"key": "rideType",
+							"value": "0"
+						},
+						{
+							"key": "route_type",
+							"value": "7"
+						},
+						{
+							"key": "search_type",
+							"value": "0"
+						},
+						{
+							"key": "timeRange",
+							"value": "0"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户徽章信息-无法访问其他人",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-3.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=2fc7c8e2e637c135f8d6a8a6e3ac1bc3d54b8fc4cd5921efd10d881e671e0270"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNYZJksiZKLvKLmxFtohriXyMKNifWTbZBBm9xGZgSOgjWVTdBA9llcoK/8Cta46aig72amCZflFsvvaYJlPLXG8o9X93sd4W0G06KO+uXD6lwnAZRpgy8SpitZy5L0wBQraPYkgeH2AHj9h/b4PbDIBWnGStAMZWAbZ/zy3iamHBZHrHyP1irpWMYaPbzAMb6MB5eqFClxPTexRtVxZ/nnortL02bJiQ9wqAWgKH94imbD55vsHl2O5R8d4F5sQEpVJQYxhbuXDYs7BOr50H/fw7zm+qnpWlqOXoHGGx6y0i1fH8EzU2zpBpUlboSA6oIwWCKlU9qwlgLwsNyGuW3bKshpw0c/2Ydq9AItkqKhhg8zvebAEPDFC4jRJs9j2o1zIpegAViot63Oz6urHwWAs+LfoOsMy6R7muVkNSAXEhAeiSM5U8wGD+bc0UI5IOElcLY9byUok3R71Sui/K5rIn/qTwHSQ69ox67ydDpKjJ+RBzYWQh3Wx25JtdHDLlpyxmeSavX59ApgRDmVWsw5rCE6PEgfLkVv3hzkB6VwVXCVIZYPNEC3LyNCYMLupfNHierScEPphGENVP30il2zEZAvMfBV1noDvEasi4zBwiqjrGNNgHfj5pGpBiT+PTRbIJaFZo2/ZCCpLTD/mpspWrQC4Fs2odK1dSB/5edOIelc2F7gNHLJFdwXf8TBraJIKvMF26uVn9I6l6dm+z+UCzjccyun2ILm5Bii89zAOXeqz4YZssGMMwfWQFJ7bJNiahKWf2y7FbS/shD0v6IzlMm9tS6dg4YnxJdupCwmMP"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "ffdf94913dc75415b9631b8b7ebce963 1706970631 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-3.didapinche.com/user/support/medal/obtain/list?target_user_cid=569952b0-5a4e-4815-b85e-e5d8c6471ffd&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-3",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"user",
+						"support",
+						"medal",
+						"obtain",
+						"list"
+					],
+					"query": [
+						{
+							"key": "target_user_cid",
+							"value": "569952b0-5a4e-4815-b85e-e5d8c6471ffd"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "乘客个人信息接口-替换cid无法访问其他人",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-4.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=54ec8f00d085d1e3a9f45d30436df83198ea672cc5410bf1714bed5468cd629e"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNYZJksiZKLvKLmxFtohriXyMKNifWTbZBBm9xGZgSOgjWVTdBA9llcoK/8Cta46aig72amCZflFsvvaYJlPLXG8o9X93sd4W0G06KO+uXD6lwnAZRpgy8SpitZy5L0wBQraPYkgeH2AHj9h/b4PbDIBWnGStAMZWAbZ/zy3iamHBZHrHyP1irpWMYaPbzAMb6MB5eqFClxPTexRtVxZ/nnortL02bJiQ9wqAWgKH94imbD55vsHl2O5R8d4F5sQEpVJQYxhbuXDYs7BOr50H/fw7zm+qnpWlqOXoHGGx6y0i1fH8EzU2zpBpUlboSA6oIwWCKlU9qwlgLwsNyGuW3bKshpw0c/2Ydq9AItkqKhhg8zvebAEPDFC4jRJs9j2o1zIpegAViot63Oz6urHwWAs+LfoOsMy6R7muVkNSAXEhAeiSM5U8wGD+bc0UI5IOElcLY9byUok3R71Sui/K5rIn/qTwHSQ69ox67ydDpKjJ+RBzYWQh3Wx25JtdHDLlpyxmeSavX59ApgRDmVWsw5rCE6PEgfLkVv3hzkB6VwVXCVIZYPNEC3LyNCYMLupfNHierScEPphGENVP30il2zEZAvMfBV1noDvEasi4zBwiqjrGNNgHfj5pGpBiT+PTRbIJaFZo2/ZCCpLTD/mpspWrQC4Fs2odK1dSB/5edOIelc2F7gNHLJFdwXf8TBraJIKvMF26uVn9I6l6dm+z+UCzjccyun2ILm5Bii89zAOXeqz4YZssGMMwfWQFJ7bJNiahKWf2y7FbS/shD0v6IzlMm9tS6dg4YnxJdupCwmMP"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "9a40878c05dcab4e659bf77eebfa32f4 1706970631 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-4.didapinche.com/user/base/info/userSimple?queried_user_cid=569952b0-5a4e-4815-b85e-e5d8c6471ffd&user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-4",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"user",
+						"base",
+						"info",
+						"userSimple"
+					],
+					"query": [
+						{
+							"key": "queried_user_cid",
+							"value": "569952b0-5a4e-4815-b85e-e5d8c6471ffd"
+						},
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "司机个人信息接口-替换cid无法访问其他人",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-4.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=7c8723fa39bde16c2931e94ccb00d75d87ab05da2bef5b7e062921fe16898828"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuU5Q6DGgeOVlWCyqjnNFh6g9kAEeqNC54PBb5hWChDbjMTe9amjQfQR6eo+q++mjLLMOpEeaRWO1XGIFxcIGpmhH/JgsrHh3RF+yFkXCeRlmZfFo/AiR6wjc46PidqBRMAOAhl/JdFSGwpIBoJ9NdYJlrhHJBh8WfqV5HaoXH4rM/6TmDFmIXpPq3nmFQAGVLJkbz45XyWKZTyIz1TeRApV+bTdwrc+YE2dY5VrXhPA4HbEKrauHPXx+eu+l0i4RBYNsmgHhJq/QSdaVXONxk+EfQkW1u4EEnBmSYMIAIdIQJguVebyGngSlDx+VWRJZcqn32L2oL3FTCSir19qtN3s6AWWy439SwKmtuo1QGjBzEnvkFnoJnwkuuiJwLunWnwEXrH5uPLwxu1NnQaWnYfwIBYX+ZialoJNVaYmlMdhee/VObA7OofI3Yv03HnFB4DAIoRb63sXw1MT7mMoJz5qIwDxXQiesNZH4tq704TpgYHm3UY7mU3Qmxv0uY5rD2BBuY5S7OKdT2cQnbfx0Jrw3h7wPoT2iTfSw5MAJzZoLki3kxY9mDalpYD4GpUYNr8vdSfo8DNDAFHk0zfLWyWSrtBihZgsNj7mmWnlml8rs2apA3OUCkThVJFZ9/XXmxrDaKFKfpBmGTG3TD5tX7e6hsLPoHZPG/GXMMkREhiuhqWCpZGE/eI8InNYOW/cxYegjmTn6mzZJ4hS6VfaXkAZsDiwYnTwmrggPdrn+x9UTQAw0BPn0MrYQmejsJkqPpYKEVtTxewcQ8IfXHwqAKtENPInleP35u93dp8TTetIXHlVaZfqwe/z8YBKuD62YtG49va2tKpJn/NKkO+1Z4ciPAkLKMb9rOb3CUmy680dC7yGJhdUhklP"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-Hans-FR;q=1, en-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "812a09c1a5d94586c5c02383b144b901 1704612642 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-4.didapinche.com/user/profile/emergency?user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-4",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"user",
+						"profile",
+						"emergency"
+					],
+					"query": [
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "汽车信息-替换cid无法访问其他人",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "capis-2.didapinche.com"
+					},
+					{
+						"key": "Cookie",
+						"value": "__clickidc=155075955653883511; acw_tc=679a4d67b34ff98cef73fd7ed90cda855dfdb59e8fc289afc11d3638c0041502"
+					},
+					{
+						"key": "ddcinfo",
+						"value": "xMBPaen8FeTm6vYl5KB4SkwR6MopzTW6B4xftQZiR00hZ7pBeP3pFtJnUFr2+Yt546TiWLrDjuUFEpcT/5v5cvoxitP+lkdiH4OFxnVCnKzS/6ITtib9C9qAehvzs015KdqCcxmFCSI0kfBLAbvkD77I3foT4v3EWiAbqQ/mPL3RKqFHcZLnGVkw2YifTurcHc8N9k7T7HY+VpdD94ZZNfomf31Qr7Txyvd3w/iQmTMCNZRtiGLrksOeLET5ESgK/xylncdN//mDgqUjP2LTO7CTp+wk3oR0aL6Q1e7rYIccKSWDRiTu/gqFoW9Yao1gCOmnzl04lXJ6fPYaISWmnredQhBLNr8Y+RsSSdUal/gI9uVniRvU74ktFcE+d+pjerz49zyUzjV1cUsmOb8KXWiyBVDD/sMMlIa4SVdBdc13UW4CXLA8VrCpqeSmUYIP2zhgCC0FowzIP3JCQlM/aLKnDtuSPMOMrmabrjX5evkpw73roNxRH4uQk4h2Q1chT7aWPDxP4QYRwKPFZtZlB4Rw1DRwInBHmRY8Cgt6dxNXyNZBwywTyrb8oSU4y4XjiYYanbjPJE2mcxqOs6QPwoiLJ/7FnG/dZ9G/3ASt7pGDg5XhYM32jroOMoZgLPwIDK5ubNn8iNM+B9KFLh/Sc9Hsc6ogcAP4VyPD3Ib9gtFHJr337GQXE2FWGMTwtiKga5ONgSqtsqRoYdIsuVhDhWzsnnvX8DBNcqTh61PsGJnB4R08+8vWoXfITnlMO9Xl/z+UX2/0oWnA6J5HJAzv6AEGGXuNHRAsukf0hDZwIXRc24FRNsXFDoVM1jZ6AwEww2T8WsmOodCdHgWMMMDvd9GsuTAqoWPbayFrQmIfUhHy9S7kgh71xTa4Yg9yrDhpahQ4LW5ThqtisM3Pvm5ztBZzJ/VEtzr1a8TDlarwUOJXhprYEADvXLUFUoJtVFwYQjdsKWPL1FUPHcfyRgisCW+OuR0LsegqgbafmUkcH/JEL0i0+IM3AlT90jPCOToB"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-FR;q=1, zh-Hans-FR;q=0.9, zh-Hant-FR;q=0.8, fr-FR;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer DadQysahmfxzlREoUypF54LHduBOhvq/8gqsEUNIIAai7kDtghhfvrRvjCFIWu+IaTg5QFhDQz6Vw2y+Xb/McmGLRRY6agvCu6r0N+7asLBvMt80jcsYVCYoOpK2Df3S"
+					},
+					{
+						"key": "sign",
+						"value": "2f6607aec311b1607c1f02618bfa5015 1706971593 carpool"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1"
+					}
+				],
+				"url": {
+					"raw": "https://capis-2.didapinche.com/carpool/sustain/driver/page/car?user_cid=cca525a1-ff00-4a4e-a0bd-44c9ea244405",
+					"protocol": "https",
+					"host": [
+						"capis-2",
+						"didapinche",
+						"com"
+					],
+					"path": [
+						"carpool",
+						"sustain",
+						"driver",
+						"page",
+						"car"
+					],
+					"query": [
+						{
+							"key": "user_cid",
+							"value": "cca525a1-ff00-4a4e-a0bd-44c9ea244405"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
