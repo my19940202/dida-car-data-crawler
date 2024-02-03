@@ -1,0 +1,22 @@
+{
+  "name": "dida-car-data-crawler",
+  "version": "1.0.0",
+  "description": "自动化获取嘀嗒拼车数据",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "dida",
+    "data",
+    "fetch"
+  ],
+  "author": "xibobo",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "2.1.1",
+    "lodash": "4.17.20",
+    "axios": "1.6.7",
+    "moment": "^2.29.4"
+  }
+}
