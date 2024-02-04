@@ -57,8 +57,13 @@ async function appendContent(filePath, data) {
         JSON.stringify(data)
     ];
     await fs.promises.appendFile(filePath, '\n' + formatedContent.join('\t'), (err) => {
-        if (err) throw err;
-        console.log(`${filePath} ${cid} append done`);
+        if (err) {
+            console.log(`append err`);
+            throw err;
+        }
+        else {
+            console.log(`${filePath} ${cid} append done`);
+        }
     });
 }
 
@@ -67,6 +72,8 @@ function objectToQueryString(obj) {
         `${key}=${obj[key]}`
     ).join('&');
 }
+
+// 订单默query
 const def_query = {
     day_filter: 2,
     eco_route_type: 0,
@@ -78,6 +85,7 @@ const def_query = {
     user_cid: 'cca525a1-ff00-4a4e-a0bd-44c9ea244405'
 };
 
+// 请求headers包含鉴权和cookie等信息
 const HEADERS_MAP = {
     WORK: {
         'Host': 'capis-2.didapinche.com', 
@@ -97,6 +105,7 @@ const HEADERS_MAP = {
         'accept': '*/*', 
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) DidaCronet/0.0.1 Mobile/15E148 Safari/604.1'
     },
+    // 附近订单
     NEAR: {
         'Host': 'capis-1.didapinche.com', 
         'Cookie': '__clickidc=155075955653883511', 
@@ -145,6 +154,7 @@ const carListFetch = async type => {
     const listData = _.get(response, 'data.list', [])
         .map(item => dataFormatHelper(item))
         .forEach(async (item) => {
+            // 不写入重复数据
             const exist = await containCertainStr(FILE_PATH[type], _.get(item, 'passenger_user_info.cid'));
             !exist && await appendContent(FILE_PATH[type], item);
         });
